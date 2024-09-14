@@ -80,7 +80,7 @@ int main()
     scanf("%i", &andar);
     inserir(&fila, andar);
     } else if(escolha == 2){
-        if(!estaVazia){ printf("você não colocou nenhum andar!\n");}
+        if(estaVazia(&fila)){ printf("você não colocou nenhum andar!\n");}
         else{
             mostrarFila(&fila);
             criarFila(&fila, 12);
